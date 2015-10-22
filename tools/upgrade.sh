@@ -23,7 +23,7 @@ fi
 printf "${BLUE}%s${NORMAL}\n" "Upgrading Oh My Zsh"
 cd "$ZSH"
 git remote add upstream https://github.com/robbyrussell/oh-my-zsh.git
-if git checkout master && git fetch upstream && git merge upstream/master && git pull --rebase --stat origin master
+if git checkout master && git fetch upstream && git merge upstream/master
 then
   printf '%s' "$GREEN"
   printf '%s\n' '         __                                     __   '
